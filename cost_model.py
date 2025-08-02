@@ -42,7 +42,7 @@ mse = mean_squared_error(y_test, y_pred)
 rmse = np.sqrt(mse)
 
 # 3. Convert error metrics to INR
-usd_to_inr_rate = 83  # Approximate conversion rate
+usd_to_inr_rate = 1.87  # Approximate conversion rate
 mae_inr = mae * usd_to_inr_rate
 rmse_inr = rmse * usd_to_inr_rate
 

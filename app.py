@@ -80,7 +80,7 @@ if submit_button:
 
     # --- Prediction and Display ---
     prediction_usd = model.predict(input_data)[0]
-    usd_to_inr_rate = 83
+    usd_to_inr_rate = 1.87  # Same rate as in the training script
     prediction_inr = prediction_usd * usd_to_inr_rate
 
     st.success(f"**Predicted Insurance Cost: ₹{prediction_inr:,.2f}**")
